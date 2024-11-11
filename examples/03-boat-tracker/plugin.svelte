@@ -185,7 +185,8 @@
 
                     markers.push({ sail, marker, latestPosition });
                     marker._icon.setAttribute('data-heading', String(heading));
-                    marker.on('click', () => displayPopup(sail));
+                    marker.on('mouseover', () => displayPopup(sail));
+                    marker.on('mouseout', () => openedPopup?.remove());
 
                     lines.push(layer);
 
