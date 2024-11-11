@@ -34,7 +34,7 @@
             </div>
         </div>
         {#each listOfBoats as boat}
-            {@const { sail, color, rank, heading, total_time } = boat}
+            {@const { sail, color, rank, heading, speed, dist4h, dist24h, dtl } = boat}
             <div
                 class="boat mb-20 size-xs clickable"
                 style:border-left-color={color}
@@ -46,11 +46,20 @@
                 <div class="boat__rank">
                     Rank: {rank}
                 </div>
+                <div class="boat__speed">
+                    To leader: {dtl} nm 
+                </div>
                 <div class="boat__heading">
                     Heading: {heading}°
                 </div>
                 <div class="boat__speed">
-                    {total_time}
+                    Speed: {speed} kt
+                </div>
+                <div class="boat__speed">
+                    Dist 4h: {dist4h} nm
+                </div>
+                <div class="boat__speed">
+                    Dist 24h: {dist24h} nm
                 </div>
             </div>
         {/each}
@@ -146,7 +155,7 @@
     };
 
     const loadResults = () => {
-        fetch('https://www.windy.com/img/windy-plugins/boats.json')
+        fetch('https://13-60-19-210.nip.io/api/data')
             .then(response => response.json())
             .then(result => result.result)
             .then((results: Record<string, BoatResult>) => {

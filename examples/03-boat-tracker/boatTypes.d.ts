@@ -5,6 +5,10 @@ export interface BoatResult {
     timestamp: number;
     lat_dec: number;
     lon_dec: number;
+    speed: number;
+    dist4h: number;
+    dist24h: number;
+    dtl: number;
     lastreport_heading: number;
     lastreport_speed: number;
     lastreport_vmg: number;
