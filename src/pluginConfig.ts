@@ -1,16 +1,17 @@
 import type { ExternalPluginConfig } from '@windy/interfaces';
 
 const config: ExternalPluginConfig = {
-    name: 'windy-plugin-my-plugin',
-    version: '0.1.0',
-    icon: '🔌',
-    title: 'This is my first plugin',
-    description: 'This is my first plugin.',
+    name: 'windy-plugin-vandee',
+    version: '1.0.0',
+    title: 'Vandee Boat Tracker',
+    icon: '🛥',
+    description: 'This plugin demonstrates how to create simple race tracker.',
     author: 'John Doe (optional company name)',
     repository: 'https://github.com/windycom/windy-plugin-template',
     desktopUI: 'rhpane',
-    mobileUI: 'fullscreen',
-    routerPath: '/my-plugin',
+    mobileUI: 'small',
+    desktopWidth: 200,
+    routerPath: '/vandee-tracker',
 };
 
 export default config;

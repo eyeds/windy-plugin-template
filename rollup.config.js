@@ -17,7 +17,7 @@ const useSourceMaps = true;
 
 const buildConfigurations = {
     src: {
-        input: 'src/plugin.svelte',
+        input: 'examples/03-boat-tracker/plugin.svelte',
         out: 'plugin',
     },
     example01: {
