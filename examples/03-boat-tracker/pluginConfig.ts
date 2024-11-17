@@ -2,7 +2,7 @@ import type { ExternalPluginConfig } from '@windy/interfaces';
 
 const config: ExternalPluginConfig = {
     name: 'windy-plugin-vandee',
-    version: '1.0.2',
+    version: '1.0.3',
     title: 'Vandee Boat Tracker',
     icon: '🛥',
     description: 'This plugin demonstrates how to create simple race tracker.',
