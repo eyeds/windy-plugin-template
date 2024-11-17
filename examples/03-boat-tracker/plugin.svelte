@@ -192,7 +192,7 @@
 
                     // Create a label for the boat name
                     const label = L.divIcon({
-                        html: `<span style="color: hsla(0%, 0%, 0%, 0.7); font-weight: bold; font-size:14px; background: rgba(255,255,255,0); padding: 2px 5px; border-radius: 3px;">${sail}</span>`,
+                        html: `<span style="color: hsla(0%, 0%, 0%, 0.7); font-color: black; font-weight: bold; font-size:14px; background: rgba(255,255,255,0); padding: 2px 5px; border-radius: 3px;">${sail}</span>`,
                         className: "",
                         iconSize: [100, 24],
                         iconAnchor: [40, -10], // Offset for better positioning
