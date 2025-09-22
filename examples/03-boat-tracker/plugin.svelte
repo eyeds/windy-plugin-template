@@ -155,7 +155,7 @@
     };
 
     const loadResults = () => {
-        fetch('https://13-60-19-210.nip.io/api/data')
+        fetch('https://paddle.slovo.win/api/data')
             .then(response => response.json())
             .then(result => result.result)
             .then((results: Record<string, BoatResult>) => {
